@@ -1,0 +1,52 @@
+/* Navbar */
+.right-align {
+    margin-left: auto!important;
+    margin-right: 0px !important;
+}
+/* Main Image */
+.jumbotron {
+   
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url("assets/keys-workshop-mechanic-tools-162553.jpeg");
+    background-size: cover; 
+    height: 500px;   
+}
+.jumbotron .titletext {
+    color: white;
+    font-size: 75px;
+    display: block;
+    font-family: 'Bowlby One SC', cursive;
+}
+.container-fluid {
+    height:100%;
+    display:table;
+    width: 100%;
+    padding: 0;
+  }
+.row-fluid {
+      height: 100%; 
+      display:table-cell; 
+      vertical-align: middle;
+}
+.centering {
+    float:none;
+    margin:0 auto;
+    text-align: center;
+  }
+
+/* MEDIA QUERIES   */
+@media only screen and (min-width:769px) { /* For desktop: */
+        .navbar-brand {
+            display: none;
+        }    
+}
+ @media only screen and (min-width:321px) and (max-width:768px) { /* For Tablet */
+
+}
+@media only screen and (max-width:320px) { /* For Mobile */
+    .jumbotron .titletext {
+        visibility: 0;
+    }
+}
