@@ -3,6 +3,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <!-- Core CSS file -->
+<link rel="stylesheet" href="photoswipe/photoswipe.css"> 
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="photoswipe/default-skin/default-skin.css"> 
+
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -14,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto right-align">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Services</a>
@@ -28,7 +38,7 @@
               </ul>
             </div>
           </nav>
-          <div class="jumbotron">
+          <div class="jumbotron" id="home">
               <div class="container-fluid">
                   <div class="row-fluid">
                     <div class= "centering titletext">WORK BY RICHARD</div>
@@ -69,13 +79,184 @@
               </div>
           </div>
           <div class="container" id="gallery">
+            <h2>Gallery</h2>
+            <!-- <div class="container">
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="assets/builtin.jpg" class="rounded float-left" alt="..." height="500px">
+                  <img src="assets/fireplace.jpg" class="rounded float-right" alt="..." height="500px">
+                </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img src="assets/stone.jpg" class="rounded float-left" alt="..." height="500px">
+                    <img src="assets/deck.jpg" class="rounded float-right" alt="..." height="500px">
+              </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col">
+                    <img src="assets/woodwork.jpg" class="rounded float-left" alt="..." height="500px">
+              <img src="..." class="rounded float-right" alt="...">             
+              </div>
+              </div>
+          </div> -->
 
+          <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://www.flickr.com/photos/156978245@N03/26008643397/in/album-72157688917984730/" itemprop="contentUrl" data-size="1024x1024">
+                  <img src="https://www.flickr.com/photos/156978245@N03/26008643397/" itemprop="thumbnail" alt="Image description" />
+              </a>
+                                                  <figcaption itemprop="caption description">Image caption  1</figcaption>
+                                                  
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
+                  <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
+                  <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 3</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
+                  <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+        
+        
+          </div>
+        
+        <!-- <h2>Second gallery:</h2>
+        
+          <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        
+          
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
+                  <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2.1</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
+                  <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2.2</figcaption>
+            </figure>
+        
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
+                  <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2.3</figcaption>
+            </figure>
+        
+        
+          </div> -->
+        
+        
+        
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element, as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+        
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+        
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+        
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui PhotoSwipeUI_Default">
+        
+                    <div class="pswp__top-bar">
+        
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+        
+                        <div class="pswp__counter"></div>
+        
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+        
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+        
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+        
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+        
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+        
+                  </div>
+        
+                </div>
+        
+        </div>
+</div>
           </div>
           <div class="container" id="contact">
-
+            <h2>Contact Us</h2>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-2"></div>
+                <div class="col-5">
+                  <img src="assets/person-placeholder.jpg" class="img-thumbnail">
+                </div>
+                <div class="col">
+                  <p>Richard Parks</p>
+                  <p>555.555.5555</p>
+                  <p>richardparks91@gmail.com</p>
+                </div>
+              </div>
+            </div>
         </div>
-    </body>
+ 
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
