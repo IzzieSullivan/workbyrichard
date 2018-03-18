@@ -9,7 +9,7 @@
     background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)),
-                     url("assets/keys-workshop-mechanic-tools-162553.jpeg");
+                     url("assets/stock-photo-renovation-interior-d-render-521094097.jpg");
     background-size: cover; 
     height: 500px;   
 }
@@ -17,7 +17,7 @@
     color: white;
     font-size: 75px;
     display: block;
-    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Rambla', sans-serif;
 }
 .container-fluid {
     height:100%;
