@@ -97,12 +97,18 @@ h2 {
         .jumbotron .titletext {
             font-size: 75px;
         } 
+        .my-gallery {
+            margin-left: 6%;
+        }
+        .mygallery2 {
+            margin-left: 6%;
+        }
         .my-gallery figure {
-            margin: 0 2% 5% 2%;
+            margin: 0 5% 5% 5%;
             width: 140px;
           }
         .my-gallery2 figure {
-            margin: 0 2% 5% 2%;
+            margin: 0 5% 5% 5%;
             width: 200px;
         }
         .img-thumbnail {
