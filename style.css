@@ -3,6 +3,21 @@
     margin-left: auto!important;
     margin-right: 0px !important;
 }
+.navbar-nav a {
+    font-family: 'Share Tech', sans-serif;
+}
+h2 {
+    font-family: 'Share Tech', sans-serif;
+}
+p {
+    font-family: 'Dosis', sans-serif;
+}
+a {
+    font-family: 'Dosis', sans-serif;
+}
+li {
+    font-family: 'Dosis', sans-serif;
+}
 /* Main Image */
 .jumbotron {
    
@@ -17,7 +32,7 @@
     color: white;
     font-size: 50px;
     display: block;
-    font-family: 'Rambla', sans-serif;
+    font-family: 'Share Tech', sans-serif;
 }
 .container-fluid {
     height:100%;
