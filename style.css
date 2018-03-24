@@ -15,7 +15,7 @@
 }
 .jumbotron .titletext {
     color: white;
-    font-size: 75px;
+    font-size: 50px;
     display: block;
     font-family: 'Rambla', sans-serif;
 }
@@ -35,6 +35,9 @@
     margin:0 auto;
     text-align: center;
   }
+  p {
+    text-align: center;
+  }
 /* Services */
 .container {
    margin-bottom: 5%; 
@@ -51,12 +54,13 @@ h2 {
   .my-gallery img {
     width: 100%;
     height: auto;
+
   }
   .my-gallery figure {
     display: block;
     float: left;
-    margin: 0 5% 5% 5%;
-    width: 155px;
+    margin: 0 5% 5% 29%;
+    width: 300px;
   }
   .my-gallery figcaption {
     display: none;
@@ -69,12 +73,13 @@ h2 {
   .my-gallery2 img {
     width: 100%;
     height: auto;
+  
   }
   .my-gallery2 figure {
     display: block;
     float: left;
-    margin: 0 5% 5% 5%;
-    width: 250px;
+    margin: 0 5% 5% 29%;
+    width: 300px;
   }
   .my-gallery2 figcaption {
     display: none;
@@ -82,15 +87,32 @@ h2 {
 /* contact */
 .img-thumbnail {
     border-radius: 50%;
+    margin: 33%;
 }
 /* MEDIA QUERIES   */
-@media only screen and (min-width:769px) { /* For desktop: */
+@media only screen and (min-width : 1200px) { /* For desktop: */
         .navbar-brand {
             display: none;
-        }    
+        }   
+        .jumbotron .titletext {
+            font-size: 75px;
+        } 
+        .my-gallery figure {
+            margin: 0 2% 5% 2%;
+            width: 140px;
+          }
+        .my-gallery2 figure {
+            margin: 0 2% 5% 2%;
+            width: 200px;
+        }
+        .img-thumbnail {
+            margin: 0px ;
+        }
 }
- @media only screen and (min-width:321px) and (max-width:768px) { /* For Tablet */
-
+@media only screen and (min-width : 768px) /* For Tablet */
+    .img-thumbnail {
+        margin: 0px ;
+    }
 }
 @media only screen and (max-width:320px) { /* For Mobile */
     .jumbotron .titletext {

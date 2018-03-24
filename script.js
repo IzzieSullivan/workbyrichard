@@ -203,3 +203,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+initPhotoSwipeFromDOM('.my-gallery2');
