@@ -55,10 +55,28 @@ h2 {
   .my-gallery figure {
     display: block;
     float: left;
-    margin: 0 5px 5px 0;
-    width: 150px;
+    margin: 0 5% 5% 5%;
+    width: 155px;
   }
   .my-gallery figcaption {
+    display: none;
+  }
+  /* Gallery2 */
+  .my-gallery2 {
+    width: 100%;
+    float: left;
+  }
+  .my-gallery2 img {
+    width: 100%;
+    height: auto;
+  }
+  .my-gallery2 figure {
+    display: block;
+    float: left;
+    margin: 0 5% 5% 5%;
+    width: 250px;
+  }
+  .my-gallery2 figcaption {
     display: none;
   }
 /* contact */
